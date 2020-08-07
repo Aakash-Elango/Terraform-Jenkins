@@ -18,4 +18,7 @@ resource "aws_security_group" "allow-ssh-port" {
 		protocol    = "tcp"
 		cidr_blocks = ["0.0.0.0/0"]
 	}
+	tags = {
+		Name = "Linux-sg"
+	}
 }
