@@ -6,7 +6,7 @@ resource "aws_instance" "linux-server" {
 	ami           	= "ami-085925f297f89fce1"
 	instance_type 	= "t2.micro"
 	security_groups = ["${aws_security_group.allow-ssh-port.name}"]
-	key_name 		= "terraform-key"
+	key_name 		= "my-new-key"
 }
 
 resource "aws_security_group" "allow-ssh-port" {
