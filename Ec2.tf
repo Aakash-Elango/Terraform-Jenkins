@@ -19,6 +19,6 @@ resource "aws_security_group" "allow-ssh-port" {
 		cidr_blocks = ["0.0.0.0/0"]
 	}
 	tags = {
-		Name = "Linux-sg"
+		Name = "Linux"
 	}
 }
