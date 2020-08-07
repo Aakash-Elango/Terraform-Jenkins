@@ -19,5 +19,10 @@ pipeline{
 				          sh label: '', script: 'terraform apply --auto-approve'
 			        }
 		    }
+	stage("Terraform destroy"){
+			        steps{
+				          sh label: '', script: 'terraform destroy --auto-approve'
+			        }
+		    }
     }
 }
